@@ -102,17 +102,19 @@ button {
     border-radius: 4px;
 }
 
-.story-title {
+.social-ratings {
+    color: #333;
+    text-align: right;
+}
+
+s #story-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.social-ratings {
-    color: #333;
-}
 
-.story-image {
+#story-image {
     float: right;
     max-width: 256px;
     max-height: 256px;

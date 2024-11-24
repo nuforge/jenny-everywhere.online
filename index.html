@@ -14,6 +14,8 @@
         rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="icon" type="image/png" href="images/jenny-everywhere-icon.png">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
     <script src='main.js'></script>
 </head>
 
@@ -31,38 +33,17 @@
             <section>
     </header>
     <main>
-        <section class="story-title">
-            <h2>You wake up on a Monday. Or is it Tuesday?</h2>
-            <div class="social-ratings">
-                <span class="material-symbols-outlined">arrow_upward</span>
-                <span class="material-symbols-outlined">arrow_downward</span>
-                <span class="material-symbols-outlined">chat_bubble</span>
-                <span class="material-symbols-outlined">favorite</span>
-            </div>
-
-        </section>
         <section>
-            <p>
-                <img src="images/gallery/001.webp" alt='Jenny Everywhere - 001' class="story-image">
-            </p>
-            <p>Either way, it's a day, and <a>Jenny Everywhere</a> is banging on your apartment window.
-            </p>
-
-            <p>"<em>Get your jetpack, we're late!</em>" she yells, her <a>🧣scarf</a> flapping dramatically, even though
-                there's no wind. She doesn't seem to care that you're still in pajamas—or that jetpacks aren't real (or
-                so you thought).</p>
-
-            <p>You stumble to the window, pulling it open. Jenny grins, radiating that effortless <a>😎confidence</a>
-                that
-                makes you want to believe she knows exactly what's going on... even though she probably doesn't. 😏
-            </p>
-
-            <p>Behind her, a glowing green <a>🟢portal</a> hums ominously in the middle of the street, swirling with
-                unearthly energy.</p>
-
-            <p>A dude with a mohawk and a flamethrower casually steps out, his expression as calm as if he's just
-                picking up groceries.</p>
+            <img src="images/gallery/001.webp" alt='Jenny Everywhere - 001' id="story-image">
         </section>
+        <section id="story-body">
+        </section>
+        <div class="social-ratings">
+            <span class="material-symbols-outlined">arrow_upward</span>
+            <span class="material-symbols-outlined">arrow_downward</span>
+            <span class="material-symbols-outlined">chat_bubble</span>
+            <span class="material-symbols-outlined">favorite</span>
+        </div>
     </main>
     <footer>
         <section>
@@ -84,5 +65,6 @@
         </section>
     </footer>
 </body>
+<script>fetch_story()</script>
 
 </html>
