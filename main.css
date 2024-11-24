@@ -1,34 +1,66 @@
 body {
     background-color: #131313;
-    font-family: "Open Sans", sans-serif;
-    color: #eee;
+    font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
+    color: #ccc;
     margin: 0;
     padding: 1em;
     max-width: 800px;
     margin: 0 auto;
+    font-size: 14px;
 }
 
 a {
     text-decoration: none;
-    color: #0077cc;
+    font-size: 16px;
+    font-variation-settings: "wdth" 75;
+    color: #ffffff;
 }
 
-#search {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1em;
-    padding: 4px 8px;
-    border: 1px solid #333;
-    border-radius: 8px;
-    font-size: 12px;
-    color: #696969
+h2 {
+    color: #eee;
+}
+
+em {
+    color: #82c1ee;
 }
 
 header {
     display: flex;
     justify-content: space-between;
+}
+
+header section {
+    display: flex;
     align-items: center;
-    margin-bottom: 1em;
+}
+
+header section a {
+    margin: 0 4px;
+}
+
+header section button {
+    margin: 0 8px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#search {
+    display: flex;
+    justify-content: center;
+    padding: 4px 8px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #696969;
+    background-color: #333;
+
+}
+
+input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-image: none !important;
+    background-color: light-dark(rgb(49, 49, 49), rgba(70, 90, 126, 0.4)) !important;
+    color: fieldtext !important;
 }
 
 footer {
@@ -54,14 +86,30 @@ nav ul li {
     margin-bottom: 0.5em;
 }
 
+main {
+    padding: 4px 8px;
+}
 
 button {
+    font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-variation-settings: "wdth" 75;
     background-color: #1b1b1b;
     color: #696969;
     border: none;
-    padding: 0.5em 1em;
+    padding: 4px 8px;
     cursor: pointer;
-    border-radius: 0.25em;
+    border-radius: 4px;
+}
+
+.story-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-ratings {
+    color: #333;
 }
 
 .story-image {
