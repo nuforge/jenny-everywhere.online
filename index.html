@@ -42,10 +42,14 @@
         <section id="story-body">
         </section>
         <div class="social-ratings">
-            <span class="material-symbols-outlined vote-up">arrow_upward</span>
-            <span class="material-symbols-outlined vote-down state-off">arrow_downward</span>
-            <span class="material-symbols-outlined comment state-off">chat_bubble</span>
-            <span class="material-symbols-outlined favorite">favorite</span>
+            <span class="material-symbols-outlined vote-up social-button" onclick="toggleSocialButton(this)"
+                id="social_upvote">arrow_upward</span>
+            <span class="material-symbols-outlined vote-down social-button state-off" id="social_downvote"
+                onclick="toggleSocialButton(this)">arrow_downward</span>
+            <span class="material-symbols-outlined comment social-button state-off" id="social_comment"
+                onclick="toggleSocialButton(this)">chat_bubble</span>
+            <span class="material-symbols-outlined social-button favorite" id="social_favorite"
+                onclick="toggleSocialButton(this)">favorite</span>
         </div>
     </main>
     <footer>
@@ -72,7 +76,7 @@
 
 <script>
     const imageElement = document.getElementById("jenny_everywhere_avatar"); // Assuming you have an <img> tag with id="myImage"
-    imageElement.src = "images/avatars/jenny-everywhere-avatar-" + randomAvatar(30) + ".png"; 
+    imageElement.src = "images/avatars/jenny-everywhere-avatar-" + randomAvatar(32) + ".png"; 
 </script>
 
 </html>

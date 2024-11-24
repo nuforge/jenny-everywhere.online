@@ -2,6 +2,10 @@
     text-align: right;
 }
 
+.social-button {
+    cursor: pointer;
+}
+
 .social-ratings .vote-up {
     color: #2B75B1;
 }

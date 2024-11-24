@@ -16,6 +16,7 @@ function randomAvatar(maxValue) {
     return (Math.floor(Math.random() * maxValue) + 1).toString().padStart(2, 0)
 }
 
-function toggleSocialButton() {
+function toggleSocialButton(objButton) {
+    objButton.classList.toggle('state-off');
 
 }
