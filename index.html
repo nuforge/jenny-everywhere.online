@@ -22,8 +22,9 @@
 <body>
     <header>
         <section class="logo">
-            <a href="http://www.jennyeverywhere.online"><img src='images/avatar.png' alt='Jenny Everywhere Online'></a>
-            <a href="http://www.jennyeverywhere.online"><img src='images/jenny-everywhere-online-logo.png'
+            <a href="http://www.jennyeverywhere.online"><img src='images/avatars/jenny-everywhere-avatar-03.png'
+                    alt='Jenny Everywhere Online' class="avatar" id="jenny_everywhere_avatar"></a>
+            <a href="http://www.jennyeverywhere.online"><img src='images/logos/jenny-everywhere-online-logo.png'
                     alt='Jenny Everywhere Online'></a>
         </section>
         <section>
@@ -66,5 +67,10 @@
     </footer>
 </body>
 <script>fetch_story()</script>
+
+<script>
+    const imageElement = document.getElementById("jenny_everywhere_avatar"); // Assuming you have an <img> tag with id="myImage"
+    imageElement.src = "images/avatars/jenny-everywhere-avatar-" + randomAvatar(30) + ".png"; 
+</script>
 
 </html>

@@ -11,3 +11,7 @@ function fetch_story() {
         })
         .catch((e) => console.error(e));
 }
+
+function randomAvatar(maxValue) {
+    return (Math.floor(Math.random() * maxValue) + 1).toString().padStart(2, 0)
+}
