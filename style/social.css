@@ -1,0 +1,23 @@
+.social-ratings {
+    text-align: right;
+}
+
+.social-ratings .vote-up {
+    color: #2B75B1;
+}
+
+.social-ratings .vote-down {
+    color: #9E3E3B;
+}
+
+.social-ratings .comment {
+    color: #00CC88;
+}
+
+.social-ratings .favorite {
+    color: #FFBB00;
+}
+
+.social-ratings .state-off {
+    color: #333;
+}

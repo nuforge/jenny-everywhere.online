@@ -106,22 +106,3 @@ button {
     cursor: pointer;
     border-radius: 4px;
 }
-
-.social-ratings {
-    color: #333;
-    text-align: right;
-}
-
-s #story-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-#story-image {
-    float: right;
-    max-width: 256px;
-    max-height: 256px;
-    margin: 4px 8px;
-}
