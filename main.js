@@ -17,6 +17,14 @@ function randomAvatar(maxValue) {
 }
 
 function toggleSocialButton(objButton) {
+    objButton.classList.toggle('material-symbols-rounded');
+    objButton.classList.toggle('material-symbols-outlined');
     objButton.classList.toggle('state-off');
 
+}
+
+function toggleFavorite(objButton) {
+    objButton.classList.toggle('material-symbols-rounded');
+    objButton.classList.toggle('material-symbols-outlined');
+    objButton.classList.toggle('state-off');
 }

@@ -9,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,1,-50..200" />
     <link rel='stylesheet' type='text/css' media='screen' href='style/main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='style/story.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='style/social.css'>
-    <link rel="icon" type="image/png" href="images/jenny-everywhere-icon.png">
+    <link rel="icon" type="image/png" href="images/jenny-everywhere-icon-blue.png">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
     <script src='main.js'></script>
@@ -42,14 +43,14 @@
         <section id="story-body">
         </section>
         <div class="social-ratings">
-            <span class="material-symbols-outlined vote-up social-button" onclick="toggleSocialButton(this)"
+            <span class="material-symbols-outlined vote-up social-button state-off" onclick="toggleSocialButton(this)"
                 id="social_upvote">arrow_upward</span>
             <span class="material-symbols-outlined vote-down social-button state-off" id="social_downvote"
                 onclick="toggleSocialButton(this)">arrow_downward</span>
             <span class="material-symbols-outlined comment social-button state-off" id="social_comment"
                 onclick="toggleSocialButton(this)">chat_bubble</span>
-            <span class="material-symbols-outlined social-button favorite" id="social_favorite"
-                onclick="toggleSocialButton(this)">favorite</span>
+            <span class="material-symbols-outlined social-button state-off favorite" id="social_favorite"
+                onclick="toggleFavorite(this)">favorite</span>
         </div>
     </main>
     <footer>
